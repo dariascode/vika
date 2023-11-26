@@ -151,73 +151,74 @@ body {
 .services .logo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  align-items: border;
 }
 
 .services .poligraf {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  align-items: border;
 }
 
 .services .advertisement {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: left;
 }
 
 .services .brendbook {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: left;
 }
 
 .services .logo h1 {
   font-size: 55px;
+  text-align: border;
+  padding-left: 0;
+  
 }
 
 .services .logo p {
   font-size: 20px;
   color: white;
-  margin-bottom: 20px;
-  padding: 0 30px;
 }
 
 .services .poligraf h1 {
   font-size: 55px;
+  text-align: left;
+  padding-left: 0;
 }
 
 .services .poligraf p {
   font-size: 20px;
   color: white;
-  margin-bottom: 20px;
-  padding: 0 30px;
+  text-align: border;
 }
 
 .services .advertisement h1 {
   font-size: 55px;
+  text-align: border;
+  padding-left: 0;
+
 }
 
 .services .advertisement p {
   font-size: 20px;
   color: white;
-  margin-bottom: 20px;
-  padding: 0 30px;
+  text-align: border;
 }
 
 .services .brendbook h1 {
   font-size: 55px;
+  padding-left: 0;
+  text-align: border;
 }
 
 .services .brendbook p {
   font-size: 20px;
   color: white;
-  margin-bottom: 20px;
-  padding: 0 30px;
+  text-align: border;
 }
 
 .logo {
