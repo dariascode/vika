@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
+<body>
+  <nav class="header">
+    <button><a href="/index.html">Головна</a></button>
+    <button><a href="/services.html">Послуги</a></button>
+    <button><a href="/portfolio.html">Портфоліо</a></button>
+    <button><a href="/contacts.html">Контакти</a></button>
+  </nav>
+
+  <div class="container">
+    <div class="carousel">
+      <button class="carousel__button carousel__prev" onclick="prevSlide()">
+        ❮
+      </button>
+      <div class="carousel__viewport">
+        <div class="carousel__slide">
+          <div class="carousel__frame">
+            <img src="carousel1.jpg" alt="Image 1" />
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__frame">
+            <img src="carousel2.jpg" alt="Image 2" />
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__frame">
+            <img src="carousel3.jpg" alt="Image 3" />
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__frame">
+            <img src="carousel4.jpg" alt="Image 4" />
+          </div>
+        </div>
+        <div class="carousel__slide">
+          <div class="carousel__frame">
+            <img src="carousel5.jpg" alt="Image 5" />
+          </div>
+        </div>
+      </div>
+      <button class="carousel__button carousel__next" onclick="nextSlide()">
+        ❯
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function prevSlide() {
+      const carousel = document.querySelector(".carousel__viewport");
+      carousel.scrollLeft -= carousel.offsetWidth;
+    }
+
+    function nextSlide() {
+      const carousel = document.querySelector(".carousel__viewport");
+      carousel.scrollLeft += carousel.offsetWidth;
+    }
+  </script>
+</body>
+</html>

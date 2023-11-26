@@ -1,0 +1,401 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+.header {
+  width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: rgba(148, 154, 156, 0.9);
+  border-radius: 15px;
+}
+
+.header button {
+  height: 50px;
+  width: 200px;
+  background-color: #5bc781;
+
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  transition: color 1s ease-in-out, background-color 1s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.header button:hover {
+  cursor: pointer;
+
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 128, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.header button a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.header button a:hover {
+  text-decoration: none;
+  color: #5bc781;
+}
+
+.container {
+  width: 90%;
+  height: 75%;
+  background-color: rgba(148, 154, 156, 0.9);
+
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 50px;
+  position: relative;
+ 
+}
+
+#iam {
+  width: 60%;
+  height: 70%;
+  margin-top: 10%;
+}
+
+#insta {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+
+  transition: 1s all ease;
+}
+
+#tg {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+
+  transition: 1s all ease;
+}
+
+#insta:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#tg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.container .contacts .info {
+  text-align: center;
+  padding-top: 20%;
+  font-size: 30px;
+  color: white;
+}
+
+.services {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "logo poligraf"
+    "brendbook advertisement";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.contacts {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "info mypicture";
+  grid-template-columns: 1fr 1fr;
+}
+
+.info {
+  grid-area: info;
+}
+
+.me {
+  grid-area: mypicture;
+
+  text-align: center;
+}
+
+.services .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services .poligraf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services .advertisement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services .brendbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services .logo h1 {
+  font-size: 55px;
+}
+
+.services .logo p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+
+.services .poligraf h1 {
+  font-size: 55px;
+}
+
+.services .poligraf p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+
+.services .advertisement h1 {
+  font-size: 55px;
+}
+
+.services .advertisement p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+
+.services .brendbook h1 {
+  font-size: 55px;
+}
+
+.services .brendbook p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+
+.logo {
+  grid-area: logo;
+  border: 3px solid black;
+  margin: 50px 80px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+}
+
+.logo:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.poligraf {
+  grid-area: poligraf;
+  border: 3px solid black;
+  margin: 50px 80px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+}
+.poligraf:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.brendbook {
+  grid-area: brendbook;
+  border: 3px solid black;
+  margin: 50px 80px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+}
+.brendbook:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.advertisement {
+  grid-area: advertisement;
+  border: 3px solid black;
+  margin: 50px 80px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+}
+.advertisement:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.container h2 {
+  color: white;
+  padding-left: 10%;
+  padding-top: 2%;
+}
+
+.container img {
+  width: 250px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.container .pic1,
+.container .pic2 {
+  position: absolute;
+  border-radius: 15px;
+  opacity: 0.8;
+  transition: 2s all ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.container .pic1 {
+  right: 500px;
+  top: 50px;
+  z-index: 1;
+}
+
+.container .pic2 {
+  top: 150px;
+  right: 400px;
+}
+
+.container .pic1:hover,
+.container .pic2:hover {
+  width: 300px;
+  height: 470px;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  perspective: 1000px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  counter-increment: item;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__frame {
+  box-sizing: border-box;
+  border: 2px solid #333;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel__frame img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.carousel__prev {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.carousel__next {
+  right: 0;
+  transform: translateY(-50%);
+}
